@@ -12,6 +12,11 @@ export default function TextForm(props) {
         setText(newText);
     };
 
+    const handleClearClick = () => {
+        setText("");
+    };
+
+
 
     // Function to handle typing in textarea
     const handleOnChange = (event) => {
@@ -30,6 +35,8 @@ export default function TextForm(props) {
                 </div>
                 <button className="btn btn-primary mx-2" onClick={handleUpClick}> Convert to Uppercase </button>
                 <button className="btn btn-primary mx-2" onClick={handleLoClick}> Convert to lowercase </button>
+                <button className="btn btn-primary mx-2" onClick={handleClearClick}> Clear Text </button>
+
 
             </div>
             <div className="container">
